@@ -33,11 +33,30 @@
 //
 // console.log(age3)
 // console.log(calcAge3(1977))
+//
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = 2022 - birthYear
+//     const retirement = 65 - age
+//     return ` ${firstName} retires in ${retirement}`
+// }
+// console.log(yearsUntilRetirement(1977,'Alex'))
+// console.log(yearsUntilRetirement(1980,'Bob'))
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-    const age = 2022 - birthYear
-    const retirement = 65 - age
-    return ` ${firstName} retires in ${retirement}`
+const cutPieces = function (fruit) {
+    return fruit*4
 }
-console.log(yearsUntilRetirement(1977,'Alex'))
-console.log(yearsUntilRetirement(1980,'Bob'))
+
+function fruitProcessor(apple, orange) {
+    const applePieces = cutPieces(apple)
+    const orangePieces = cutPieces(orange)
+
+    const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges `;
+    return juice
+
+}
+
+console.log(fruitProcessor(2,3))
+
+
+
+
