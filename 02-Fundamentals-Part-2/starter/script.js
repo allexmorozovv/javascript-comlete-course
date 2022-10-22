@@ -12,14 +12,16 @@
 // const appleOrangeJuice =fruitProcessor(4,2)
 // console.log(appleOrangeJuice)
 
-//Function declaration
+//Function declaration -------------------------------------------------------------------------
 // function ageCalc1(birthYear) {
 //     return 2022 - birthYear
 // }
 //
 // const age1 = ageCalc1(1977)
 //
-// //Function expression
+
+
+// //Function expression --------------------------------------------------------------------
 // const calcAge2 = function (birthYear) {
 //     return 2022 - birthYear
 // }
@@ -27,7 +29,7 @@
 //
 // console.log(age1, age2)
 
-// //Arrow function
+// //Arrow function -------------------------------------------------------------------------------
 // const calcAge3 = birthDay => 2022-birthDay
 // const age3=calcAge3(1977)
 //
@@ -42,20 +44,38 @@
 // console.log(yearsUntilRetirement(1977,'Alex'))
 // console.log(yearsUntilRetirement(1980,'Bob'))
 
-const cutPieces = function (fruit) {
-    return fruit*4
+// const cutPieces = function (fruit) {
+//     return fruit*4
+// }
+//
+// function fruitProcessor(apple, orange) {
+//     const applePieces = cutPieces(apple)
+//     const orangePieces = cutPieces(orange)
+//
+//     const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges `;
+//     return juice
+//
+// }
+//
+// console.log(fruitProcessor(2,3))
+const calcAge = function (birthYear) {
+    return 2022 - birthYear
 }
 
-function fruitProcessor(apple, orange) {
-    const applePieces = cutPieces(apple)
-    const orangePieces = cutPieces(orange)
+const yearsUntilRetirement = function (birthYear, firstName) {
 
-    const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges `;
-    return juice
-
+    const age = calcAge(birthYear)
+    const retirement = 65 - age
+    if (retirement > 0) {
+        console.log(` ${firstName} retires in ${retirement} year`)
+        return retirement
+    } else {
+        console.log(` ${firstName} already retired`)
+        return -1
+    }
 }
-
-console.log(fruitProcessor(2,3))
+console.log(yearsUntilRetirement(1977, 'Alex'))
+console.log(yearsUntilRetirement(1940, 'Bob'))
 
 
 
