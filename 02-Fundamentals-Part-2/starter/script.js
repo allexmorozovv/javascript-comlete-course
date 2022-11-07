@@ -93,6 +93,7 @@
 // }
 // checkWinner(scoreDolphins, scoreKoalas)
 
+/*
 const friend1 = 'Alex'
 const friend2 = 'Bob'
 const friend3 = 'Tom'
@@ -117,3 +118,23 @@ const age3 = calcAge(years[years.length - 1])
 console.log(age1, age2, age3)
 const ages = [age1, age2, age3]
 console.log(ages)
+*/
+
+const friends = ['Alex', 'Bob', 'Tom']
+friends.push('Elen')
+console.log(friends)
+friends.sort()
+console.log(friends)
+friends.unshift('Jay')
+console.log(friends)
+
+friends.pop()
+const popped = friends.pop()
+console.log(popped)
+console.log(friends)
+
+friends.shift()
+console.log(friends)
+console.log(friends.indexOf('Alex'))
+console.log(friends.includes('Alex'))
+console.log(friends.includes('Elen'))
