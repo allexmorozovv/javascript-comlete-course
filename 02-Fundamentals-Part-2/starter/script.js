@@ -107,4 +107,13 @@ friends[2] = 'John'
 const firstName = 'Alex'
 const alex = [firstName, 'Frost', 2022 - 1977, friends]
 console.log(alex)
-
+console.log(alex.length)
+const calcAge = function (birthYear) {
+    return 2022 - birthYear
+}
+const age1 = calcAge(years[0])
+const age2 = calcAge(years[1])
+const age3 = calcAge(years[years.length - 1])
+console.log(age1, age2, age3)
+const ages = [age1, age2, age3]
+console.log(ages)
