@@ -141,11 +141,30 @@ console.log(friends.includes('Alex'))
 console.log(friends.includes('Elen'))
 */
 
-const calcTip = function (bill) {
+/*const calcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
 }
 
 const bills = [125, 555, 44]
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
 const totals = bills.concat(tips)
-console.log(bills, tips, totals)
+console.log(bills, tips, totals)*/
+
+const alexArray = [
+    'Alex',
+    'Frost',
+    2022 - 1977,
+    'student',
+    ['Tom', 'Bob', 'John']
+]
+
+const alexObject = {
+    firstName: 'Alex',
+    lastName: 'Frost',
+    age: 2022 - 1977,
+    job: 'student',
+    friends: ['Tom', 'Bob', 'John']
+}
+
+
+
