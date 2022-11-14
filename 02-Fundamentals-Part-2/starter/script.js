@@ -150,21 +150,36 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
 const totals = bills.concat(tips)
 console.log(bills, tips, totals)*/
 
-const alexArray = [
+/*const alexArray = [
     'Alex',
     'Frost',
     2022 - 1977,
     'student',
     ['Tom', 'Bob', 'John']
-]
+]*/
 
-const alexObject = {
+const alex = {
     firstName: 'Alex',
     lastName: 'Frost',
     age: 2022 - 1977,
     job: 'student',
     friends: ['Tom', 'Bob', 'John']
 }
+console.log(alex)
+console.log(alex.lastName)
+console.log(alex['lastName'])
+
+// const interestedIn = prompt('What do you want to now about Alex? Chose between firstName, lastName, age, job and friends')
+
+// console.log(alex[interestedIn])
+// alex[interestedIn] ? console.log(alex[interestedIn]) : console.log('Wrong request! Chose between firstName, lastName, age, job and friends')
+
+alex.location = 'Earth'
+alex['web'] = 'google.com'
+console.log(alex)
+
+// Alex has 3 friends and his best friend is called Tom
+console.log(`${alex.firstName} has ${alex.friends.length} friends and his best friend is called ${alex.friends[0]}`)
 
 
 
